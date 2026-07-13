@@ -1,3 +1,4 @@
+// Test suite for SauceDemo e-commerce site
 import {test, expect} from "@playwright/test";
 
 test.describe ("SauceDemo", () => {

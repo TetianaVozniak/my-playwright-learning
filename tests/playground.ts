@@ -25,8 +25,8 @@ const browsers = ["chromium", "firefox", "webkit"];
 //                    "масив рядків"
 
 
-const retries: number = "five";
+const retries: number = 5;
 const user = { email: "john@test.com" };
-console.log(user.password);
+console.log(user.email);
 Show less
 6:25 PM

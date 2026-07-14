@@ -79,4 +79,5 @@ test('Test 4 - Remove product from cart', async ({ page }) => {
 });
 });
 
+// End of test suite
 

@@ -17,6 +17,7 @@ test.describe ("SauceDemo", () => {
     ).toHaveURL(/inventory/);
     });
 
+    // Practice branch - adding a test comment
 
 test("Test 2 - Negative login shows error", async ({ page }) => {
 await page.getByPlaceholder("Username").fill("standard_user");
@@ -80,4 +81,3 @@ test('Test 4 - Remove product from cart', async ({ page }) => {
 });
 
 // End of test suite
-

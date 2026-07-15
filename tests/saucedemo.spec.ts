@@ -29,6 +29,19 @@ await expect(page.getByTestId("error"),
 ).toBeVisible();
 });
 
+test("Test - Locked out user cannot login", async ({ page }) => {
+    // 1. Заповнити username - locked_out_user
+    await page.getByPlaceholder("Username").fill("locked_out_user");
+    // 2. Заповнити password - secret_sauce
+    await page.getByPlaceholder("Password").fill("secret_sauce");
+    // 3. Клікнути Login
+    await page.getByRole("button", {name: "Login"}).click();
+    // 4. Перевірити помилку - точний текст
+    await expect(page.getByTestId("error"),
+"Error should appear for locked out user")
+    .toHaveText("Epic sadface: Sorry, this user has been locked out.");
+});
+
 test('Test 5 - Empty form validation', async ({ page }) => {
     await page.getByRole("button", {name: "Login"}).click();
 

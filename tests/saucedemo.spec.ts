@@ -1,4 +1,4 @@
-// Test suite for SauceDemo e-commerce site
+// SauceDemo tests - branch version
 import {test, expect} from "@playwright/test";
 
 test.describe ("SauceDemo", () => {

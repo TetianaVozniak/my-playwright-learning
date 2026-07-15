@@ -1,4 +1,4 @@
-// SauceDemo tests - main version
+// SauceDemo tests - branch version
 import {test, expect} from "@playwright/test";
 
 test.describe ("SauceDemo", () => {
